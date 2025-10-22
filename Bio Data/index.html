@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonial Biodata Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Matrimonial Biodata Form</h2>
+        <form id="biodataForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="height">Height:</label>
+            <input type="text" id="height" name="height" required>
+
+            <label for="education">Education:</label>
+            <input type="text" id="education" name="education" required>
+
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="religion">Religion:</label>
+            <select id="religion" name="religion" required>
+                <option value="">Select Religion</option>
+                <option value="Islam">Islam</option>
+                <option value="Hinduism">Hinduism</option>
+                <option value="Christianity">Christianity</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="error-message" style="color: red;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
