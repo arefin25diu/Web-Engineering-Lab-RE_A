@@ -1,0 +1,256 @@
+/* ------------------------------
+   GENERAL STYLE
+------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f8d7e2, #fdfbfb, #d5e8ff);
+    background-size: 300% 300%;
+    animation: gradientMove 10s ease infinite;
+}
+
+/* Animated gradient background */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.app-wrapper {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* ------------------------------
+   CARD STYLE (GLASS EFFECT)
+------------------------------ */
+.card {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 25px;
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* ------------------------------
+   HEADINGS
+------------------------------ */
+h2 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+h3 {
+    font-weight: 600;
+    color: #444;
+}
+
+/* ------------------------------
+   FORM ELEMENTS
+------------------------------ */
+label {
+    margin-top: 14px;
+    font-weight: 500;
+    color: #555;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: 1.5px solid #ddd;
+    background: #fff;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #ff4f87;
+    box-shadow: 0 0 5px rgba(255, 79, 135, 0.4);
+}
+
+/* ------------------------------
+   BUTTONS
+------------------------------ */
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button#saveBtn {
+    background: #ff4f87;
+    color: white;
+}
+
+button#saveBtn:hover {
+    background: #e63b72;
+}
+
+button.secondary {
+    background: #777;
+    color: #fff;
+}
+
+button.secondary:hover {
+    background: #555;
+}
+
+/* mini-button */
+.small-btn {
+    padding: 8px 14px;
+    background: #ff4f87;
+    color: white;
+    border-radius: 7px;
+}
+
+.small-btn:hover {
+    background: #e63b72;
+}
+
+/* form action buttons */
+.form-actions {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------------------
+   GRID
+------------------------------ */
+.grid {
+    display: grid;
+    gap: 25px;
+}
+@media (min-width: 850px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ------------------------------
+   AUTH (LOGIN / REGISTER)
+------------------------------ */
+.auth-form input {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.auth-form button {
+    width: 100%;
+    background: #ff4f87;
+    color: #fff;
+    font-size: 16px;
+}
+
+.auth-form button:hover {
+    background: #e63b72;
+}
+
+#auth-section {
+    max-width: 420px;
+    margin: 50px auto;
+}
+
+.error {
+    color: #d70000;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+/* ------------------------------
+   PROFILE LIST CARDS
+------------------------------ */
+.profiles-list {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    transition: 0.25s;
+}
+
+.profile-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.profile-meta strong {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+.profile-meta .muted {
+    color: #666;
+    font-size: 14px;
+}
+
+.profile-actions button {
+    margin-left: 8px;
+    border-radius: 7px;
+}
+
+/* Search bar styling */
+#searchInput {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
+    padding: 10px;
+}
+
+/* ------------------------------
+   TOP BAR
+------------------------------ */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#user-greeting {
+    font-weight: 600;
+    color: #444;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+footer {
+    text-align: center;
+    padding: 12px;
+    color: #555;
+    font-size: 13px;
+}
